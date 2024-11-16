@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Resume Builder</h1>
+  </header>
+  <main>
+    <section id="form-section">
+      <form id="resume-form">
+        <h2>Personal Information</h2>
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="address" placeholder="Address" required>
+
+        <h2>Career Objective</h2>
+        <textarea id="objective" placeholder="Write your career objective" required></textarea>
+
+        <h2>Education</h2>
+        <input type="text" id="degree" placeholder="Degree" required>
+        <input type="text" id="institution" placeholder="Institution" required>
+        <input type="text" id="year" placeholder="Year of Completion" required>
+        <input type="text" id="grade" placeholder="Grade/Percentage" required>
+
+        <h2>Work Experience</h2>
+        <input type="text" id="job-title" placeholder="Job Title" required>
+        <input type="text" id="company" placeholder="Company Name" required>
+        <input type="text" id="duration" placeholder="Duration" required>
+        <textarea id="job-description" placeholder="Job Description" required></textarea>
+
+        <h2>Skills</h2>
+        <textarea id="skills" placeholder="List your skills separated by commas" required></textarea>
+
+        <button type="button" id="create-resume">Create Resume</button>
+        <button type="reset" id="clear-form">Clear Form</button>
+      </form>
+    </section>
+    <section id="resume-section">
+      <h2>Generated Resume</h2>
+      <div id="resume"></div>
+      <button id="print-resume" onclick="window.print()">Print Resume</button>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
